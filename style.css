@@ -1,0 +1,276 @@
+body, header, section, footer {
+    text-align: center; /* Center everything */
+
+}
+header {
+ 
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+body {
+   background-color: #ece9d361;
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+}
+section {
+    padding: 20px;
+}
+
+/* Navbar Elements */
+nav ul {
+    list-style: none;
+
+    color: black; 
+
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: black; 
+            text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    color: black; 
+        text-decoration: none;
+}
+
+nav ul li a {
+    color: black; 
+    text-decoration: none;
+    text-decoration: none;
+}
+/* Responsive Navbar elements */
+@media (max-width: 768px) {
+
+    #nav-links {
+        color: black; 
+        text-decoration: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center; /* Center links */
+        padding: 10px 0;
+        color: black; 
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/*about section*/
+#about {
+   
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: center; 
+
+}
+
+#about h2{
+   
+font-size: 45px;
+
+}
+
+#about img {
+    border-radius: 50%; /* Circular image */
+    width: 150px; 
+    height: auto; 
+
+    border: 3px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+/*Education section*/
+.icon {
+    width: 30px; /* Graduation Hat */
+    vertical-align: middle;
+}
+
+#education {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.school {
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 1000px; 
+    text-align: center; 
+
+}
+
+.school:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+@media (max-width: 768px) {
+    .education-container {
+        padding: 0; 
+    }
+    
+    .school {
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+}
+
+/* Projects Section  */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background-color: #fff;
+    flex-basis: calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.expand-btn {
+    margin-top: 10px;
+    padding: 8px 16px; 
+    background: #333; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more-info {
+    display: none;
+    padding-top: 10px; 
+}
+@media (max-width: 800px) {
+    .project {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+
+
+#projects .project {
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 500px; 
+    margin: auto;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+#contact-info {
+    margin: 20px 0;
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+/*Skills */
+#skills {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #555;
+}
+/*Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+
+    color: #fff;
+}

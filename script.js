@@ -3,8 +3,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert('Form submitted!');
 
 });
-document.addEventListener('DOMContentLoaded', function() {
 
+document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.getElementById('nav-links');
     const expandButtons = document.querySelectorAll('.expand-btn');
 
@@ -19,5 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.textContent = moreInfo.style.display === 'block' ? 'Less Info' : 'More Info';
         });
     });
-
 });

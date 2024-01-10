@@ -1,9 +1,8 @@
 body, header, section, footer {
     text-align: center; /* Center everything */
-
 }
+
 header {
- 
     padding: 10px 0;
     text-align: center;
     position: relative;
@@ -16,6 +15,7 @@ body {
    margin: 0;
    padding: 0;
 }
+
 section {
     padding: 20px;
 }
@@ -23,22 +23,20 @@ section {
 /* Navbar Elements */
 nav ul {
     list-style: none;
-
     color: black; 
-
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        color: black; 
-            text-decoration: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black; 
+    text-decoration: none;
 }
 
 nav ul li {
     display: inline;
     margin: 0 10px;
     color: black; 
-        text-decoration: none;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -48,7 +46,6 @@ nav ul li a {
 }
 /* Responsive Navbar elements */
 @media (max-width: 768px) {
-
     #nav-links {
         color: black; 
         text-decoration: none;
@@ -62,9 +59,7 @@ nav ul li a {
         color: black; 
         text-decoration: none;
     }
-
 }
-
 @media (max-width: 600px) {
     nav ul li {
         display: block;
@@ -82,28 +77,24 @@ nav ul li a {
 
 /*about section*/
 #about {
-   
     padding: 20px; 
     margin: 20px auto; 
     max-width: 800px; 
     text-align: center; 
-
 }
 
 #about h2{
-   
-font-size: 45px;
-
+    font-size: 45px;
 }
 
 #about img {
     border-radius: 50%; /* Circular image */
     width: 150px; 
     height: auto; 
-
     border: 3px solid #ddd; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
 /*Education section*/
 .icon {
     width: 30px; /* Graduation Hat */
@@ -115,7 +106,6 @@ font-size: 45px;
     border-radius: 20px;
 }
 
-
 .school {
     background-color: #fff; 
     border-radius: 15px; 
@@ -123,20 +113,16 @@ font-size: 45px;
     padding: 20px; 
     margin: 20px auto; 
     max-width: 1000px; 
-    text-align: center; 
-
+    text-align: center;
 }
 
 .school:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
-
-
 @media (max-width: 768px) {
     .education-container {
         padding: 0; 
     }
-    
     .school {
         margin-left: 0; 
         margin-right: 0; 
@@ -187,14 +173,11 @@ font-size: 45px;
         flex-basis: calc(50% - 20px);
     }
 }
-
 @media (max-width: 600px) {
     .project {
         flex-basis: calc(100% - 20px);
     }
 }
-
-
 
 #projects .project {
     margin-bottom: 15px;
@@ -236,10 +219,9 @@ font-size: 45px;
 #contact-info {
     margin: 20px 0;
     padding: 20px;
-
     border-radius: 10px;
-
 }
+
 /*Skills */
 #skills {
     margin: 40px 0;
@@ -267,10 +249,10 @@ font-size: 45px;
 .skills-list li:hover {
     background-color: #555;
 }
+
 /*Footer */
 footer {
     text-align: center;
     padding: 20px;
-
     color: #fff;
 }

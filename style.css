@@ -1,0 +1,260 @@
+/* Global styles for body, header, section, and footer elements */
+body, header, section, footer {
+    text-align: center; /* Center text alignment for these elements */
+}
+/* Header styling */
+header {
+    padding: 10px 0; /* Top and bottom padding */
+    text-align: center; /* Center text alignment */
+    position: relative; /* Position relative to its normal position */
+}
+
+/* Body styling */
+body {
+   background-color: #ece9d361; /* Light background color */
+   font-family: Arial, sans-serif; /* Font family for the body text */
+   line-height: 1.6; /* Line height for better readability */
+   margin: 0; /* Remove default margin */
+   padding: 0; /* Remove default padding */
+}
+
+/* Section styling */
+section {
+    padding: 20px; /* Padding inside each section */
+}
+
+/* Navbar styling */
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    color: black; /* Text color for navbar */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to new line */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Horizontal margin for list items */
+    text-decoration: none; /* Remove underline from list items */
+}
+
+nav ul li a {
+    color: black; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+
+/* Responsive navbar for screens smaller than 768px */
+@media (max-width: 768px) {
+    #nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+    }
+
+    nav ul li {
+        text-align: center; /* Center links */
+        padding: 10px 0; /* Padding for each link */
+    }
+}
+
+/* Additional responsive styles for smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Each link as a block element */
+        margin-bottom: 5px; /* Margin at the bottom of each link */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+    }
+    nav ul li {
+        margin-bottom: 10px; /* Increased bottom margin for links */
+    }
+}
+
+/* About section styling */
+#about {
+    padding: 20px; /* Padding around the about section */
+    margin: 20px auto; /* Margin auto for center alignment */
+    max-width: 800px; /* Maximum width of the about section */
+    text-align: center; /* Center text alignment */
+}
+
+#about h2{
+    font-size: 45px; /* Font size for heading */
+}
+
+#about img {
+    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Width of the image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border: 3px solid #ddd; /* Border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Education section styling */
+.icon {
+    width: 30px; /* Width of the icon (e.g., graduation hat) */
+    vertical-align: middle; /* Align icon vertically with text */
+}
+
+#education {
+    padding: 20px; /* Padding around the education section */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.school {
+    background-color: #fff; /* Background color for school div */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside each school div */
+    margin: 20px auto; /* Centered margin */
+    max-width: 1000px; /* Maximum width */
+}
+
+.school:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Responsive styles for the education section on smaller screens */
+@media (max-width: 768px) {
+    .education-container {
+        padding: 0; /* Remove padding */
+    }
+    .school {
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Projects Section styling */
+.projects-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+}
+
+.project {
+    background-color: #fff; /* Background color for project div */
+    flex-basis: calc(33.333% - 20px); /* Flex basis with calculation for spacing */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow effect */
+    margin: 10px; /* Margin around each project */
+    padding: 10px; /* Padding inside each project */
+    text-align: center; /* Center text alignment */
+    border-radius: .5rem; /* Rounded corners */
+    position: relative; /* Position relative to normal flow */
+    overflow: hidden; /* Hide overflow */
+}
+
+.project img {
+    max-width: 100%; /* Full width of the container */
+    height: auto; /* Auto height to maintain aspect ratio */
+    display: block; /* Display as block */
+}
+
+.expand-btn {
+    margin-top: 10px; /* Margin top for the button */
+    padding: 8px 16px; /* Padding inside the button */
+    background: #333; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer */
+}
+
+.more-info {
+    display: none; /* Hide additional info by default */
+    padding-top: 10px; /* Padding at the top */
+}
+
+/* Responsive styles for projects on smaller screens */
+@media (max-width: 800px) {
+    .project {
+        flex-basis: calc(50% - 20px); /* Adjust basis for two columns */
+    }
+}
+@media (max-width: 600px) {
+    .project {
+        flex-basis: calc(100% - 20px); /* Full width for single column layout */
+    }
+}
+
+#projects .project {
+    margin-bottom: 15px; /* Bottom margin for each project */
+}
+
+/* Contact Form styling */
+#contact-form {
+    max-width: 500px; /* Maximum width of the form */
+    margin: auto; /* Center the form */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; /* Full width inputs and textarea */
+    padding: 10px; /* Padding inside inputs and textarea */
+    margin: 10px 0; /* Margin around inputs and textarea */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#contact-form textarea {
+    height: 150px; /* Fixed height for textarea */
+}
+
+#contact-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Cursor changes to pointer */
+}
+
+#contact-form button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+#contact-info {
+    margin: 20px 0; /* Margin around contact info */
+    padding: 20px; /* Padding inside contact info */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Skills section styling */
+#skills {
+    margin: 40px 0; /* Margin around skills section */
+    text-align: center; /* Center text alignment */
+}
+
+.skills-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.skills-list li {
+    background-color: #333; /* Background color for each skill */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding inside each skill */
+    margin: 10px; /* Margin around each skill */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.skills-list li:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding inside footer */
+    color: #fff; /* Text color */
+}

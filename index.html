@@ -1,0 +1,121 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourName's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@200&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GXM0QGTN7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0GXM0QGTN7');
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Main heading of the website -->
+        <h1 style="font-family: 'EB Garamond', serif;">YourName's Portfolio</h1>
+        <nav>
+            <!-- Navigation bar with links to different sections of the site -->
+            <ul id="nav-links" >
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About section with personal information and profile image -->
+    <section id="about" style="margin-top: -50px;">
+        <h2 style="text-align: center;">Hi 👋, Welcome to my Portfolio</h2>
+        <img src="ProfileImage.jpg" alt="Profile Picture" id="about-img">
+        <p>[Description about yourself]</p>
+    </section>
+
+    <!-- Education section with academic details -->
+    <section id="education">
+        <h2 style="font-family: 'EB Garamond', serif;">Education <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+        <!-- Education details are added here -->
+        <div class="education-container">
+            <div class="school">
+                <h3>University Name</h3>
+                <p>Degree, Field of Study</p>
+                <p>Year of Graduation</p>
+            </div>
+        </div>
+        <!-- Additional education entries can be added here -->
+    </section>
+
+    <!-- Projects section showcasing your work -->
+    <section id="projects">
+        <h2 style="font-family: 'EB Garamond', serif;">Projects</h2>
+        <div class="projects-container">
+            <!-- Individual project details -->
+            <div class="project">
+                <img src="Placeholder.jpeg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of project 1.</p>
+                <button class="expand-btn">More Info</button>
+                <!-- Detailed information about the project -->
+                <div class="more-info">
+                    <p>[Extended description of project 1]</p>
+                </div>
+            </div>
+            <!-- Additional projects can be added in similar blocks -->
+        </div>
+    </section>
+
+    <!-- Skills section listing your technical skills -->
+    <section id="skills">
+        <h2 style="font-family: 'EB Garamond', serif;">My Skills</h2>
+        <!-- Lists of skills -->
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="skills-list">
+            <li>Go</li>
+            <li>TypeScript</li>
+            <li>Angular</li>
+            <li>Flutter</li>
+        </ul>
+    </section>
+
+    <!-- Contact section with a form for visitors to reach out to you -->
+    <section id="contact">
+        <h2 style="font-family: 'EB Garamond', serif;">Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Contact information section -->
+    <section id="contact-info">
+        <p>Phone: [YOUR_PHONE_NUMBER]</p>
+        <p>Email: [your_email@gmail.com]</p>
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p style="color: black;">&copy; 2024 YOUR_NAME's Portfolio</p>
+    </footer>
+
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
